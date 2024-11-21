@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example confirm()</title>
+</head>
+<body>
+	<input type="button" value="Are you Sure!" onclick="message()">
+
+	<script type="text/javascript">
+		function message() {
+			var temp = confirm("Are you Sure?");
+			
+			if(temp == true){
+				alert("The value is true")
+			}
+			else{
+				alert("The value is false");
+			}
+		}
+	</script>
+</body>
+</html>

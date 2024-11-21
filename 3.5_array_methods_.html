@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods 3</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*Code for includes()*/
+		var arr1 = ["C","C++","Java","HTML","Java"];
+		var arr2 = [50,45,40,30,15];
+
+		document.writeln("To check if array has value 'Java' using includes() : " + arr1.includes("Java"));
+
+		/*Code for indexOf()*/
+		document.writeln("<br><br>");
+
+		document.writeln("To check the index of 'Java' using indexOf() : " + arr1.indexOf("Java") + "<br>");
+		document.writeln("To check the index of 'Java' using indexOf() after 3rd position : " + arr1.indexOf("Java",3) + "<br>");
+		document.writeln("To check the index of 'Angular' using indexOf() : " + arr1.indexOf("Angular") + "<br>");
+
+		/*Code for isArray()*/
+		document.writeln("<br>");
+
+		document.writeln("To check if the passed values are an Array using isArray() : " + Array.isArray(1,4,7,8) + "<br>");
+		document.writeln("To check if arr1 is an Array or not : " + Array.isArray(arr1));
+
+		/*Code for join()*/
+		document.writeln("<br><br>");
+		document.writeln("arr1 after join() : " + arr1.join(' '));
+
+		/*Code for keys()*/
+		document.writeln("<br><br>");
+		var keyArray = arr1.keys();
+		document.writeln("To check elements in keyArray array : " + keyArray + "<br>");
+		document.writeln("values in keyArray is: <br>");
+		for(k of keyArray){
+			document.writeln(k + "<br>");
+		}
+
+		/*Code for lastIndexOf()*/
+		document.writeln("<br><br>");
+		document.writeln("To check the index of 'Java' using lastIndexOf() : " + arr1.lastIndexOf("Java") + "<br>");
+
+		/*Code for map()*/
+		document.writeln("<br><br>");
+		var mapArray = arr2.map( x=> x/5);
+		document.writeln("arr2 after performing map():" + mapArray);
+	</script>
+</body>
+</html>

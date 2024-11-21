@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example String Method 1</title>
+</head>
+<body>
+		<script type="text/javascript">
+			
+			var str1 = "Hello ";
+			var str2 = "How are You?";
+			var str3 = "...";
+			var str4 = "We are learning javascript. Javascript is a wonderful Scripting languange.";
+
+			/*charAt()*/
+			document.writeln("Character at 5th position: " + str2.charAt(5));
+
+			/*charCodeAt()*/
+			document.writeln("<br>Character Code at 5th position: " + str2.charCodeAt(5));
+
+			/*concat()*/
+			document.writeln("<br><br>Concatanated String is : " + str1.concat(str2,str3));
+
+			/*indexOf()*/
+			document.writeln("<br><br>Index of 'r' in str2 is:" + str2.indexOf('o',3));
+			document.writeln("<br>Index of 'are' in str2 is:" + str2.indexOf('are'));
+			document.writeln("<br>Index of 'b' in str2 is:" + str2.indexOf('b'));
+
+			/*lastIndexOf()*/
+			document.writeln("<br><br>Last Index of 'r' in str2 is:" + str2.lastIndexOf('o'));
+
+			/*search()*/
+			document.writeln("<br><br>Check if 'javascript' exists in str4 : " + str4.search('javascript'));
+			document.writeln("<br>Check if 'javascript' exists in str4 : " + str4.search('Javascript'));
+			document.writeln("<br>Check if 'javascript' exists in str4 : " + str4.search(/Javascript/i));
+			document.writeln("<br>Check if 'or' exists in str4 : " + str4.search('or'));
+
+			/*match()*/
+			document.writeln("<br><br>Match if 'java' exists in str4 : " + str4.match('java'));
+			document.writeln("<br>Match if 'Languange' exists in str4 : " + str4.match('Languange'));
+			document.writeln("<br>Match if 'Languange' exists in str4 : " + str4.match(/Languange/i));
+		</script>
+</body>
+</html>

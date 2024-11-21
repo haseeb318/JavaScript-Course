@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Map values()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var m = new Map();
+
+		m.set(1,"HTML");
+		m.set(2,"CSS");
+		m.set(3,"JavaScript");
+
+		var iterator = m.values();
+
+		for(let i=0;i<m.size;i++){
+			document.writeln(iterator.next().value + "<br>");
+		}
+
+	</script>
+</body>
+</html>

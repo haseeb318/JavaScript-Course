@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods 4</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*of()*/
+		document.writeln("Array generated using of() : " + Array.of(1,5,8,9,4));
+		console.log(Array.of(1,"Hello",8,9,4));
+
+		/*push() and pop()*/
+		document.writeln("<br><br>");
+		var arr1 = [5,9,4];
+		arr1.push(6);
+		document.writeln("Add 6 using push() : " + arr1 + "<br>");
+		arr1.push(3);
+		document.writeln("Add 3 using push() : " + arr1 + "<br>");
+
+		document.writeln("Remove an element using pop() : " + arr1.pop() + "<br>");
+		document.writeln("Remove an element using pop() : " + arr1.pop() + "<br>");
+
+		/*reverse()*/
+		document.writeln("<br>Reverse an array using reverse() : " + arr1.reverse() + "<br>");
+
+		/*reduce()*/
+		var arr2 = [4,1,5];
+		var a = arr2.reduce(function (accumulator,currenetValue){
+			return accumulator+currenetValue;
+		});
+		document.writeln("<br>Result after reduce() : " + a);
+
+		/*some()*/
+		var arr3 = [51,8,3,20];
+
+		function test(argument) {
+			return argument > 50;
+		}
+
+		var result = arr3.some(test);
+		document.writeln("<br><br> Does Array arr3 has any value > 50? : " + result);
+
+		/*shift()*/
+		document.writeln("<br><br> Removing the very first element of Array arr3 : " + arr3.shift());
+
+		/*slice()*/
+		var arr4 = [4,6,8,2,1,3,5,7,9];
+
+		var slicedArray = arr4.slice(4,5);
+
+		document.writeln("<br><br>Sliced array : " + slicedArray);
+	</script>
+</body>
+</html>

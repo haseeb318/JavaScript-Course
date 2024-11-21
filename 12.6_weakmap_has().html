@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example WeakMap has()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var wm = new WeakMap();
+
+		var object1 = {};
+		var object2 = {};
+		var object3 = {};
+		var object5 = {};
+
+		wm.set(object1, "HTML");
+		wm.set(object2, "CSS");
+		wm.set(object3, "JavaScript");
+
+		document.writeln("To check if 'HTML' exist or not : " + wm.has(object1) + "<br>");
+
+		document.writeln("To check if there is any value at key object5 : " + wm.has(object5) + "<br>");
+	</script>
+</body>
+</html>

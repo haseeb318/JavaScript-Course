@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Promise</title>
+</head>
+<body>
+
+	<p id="result"></p>
+
+	<script type="text/javascript">
+		function display(demo){
+			document.getElementById("result").innerHTML = demo;
+		}
+
+		let promise = new Promise(function(myResolve,myReject){
+			let x = 2;
+
+			if( x == 1 ){
+				myResolve("OK");
+			}else{
+				myReject("Error");
+			}
+		});
+
+		promise.then(
+			function(value) { display(value); },
+			function(error) { display(error); }
+		);
+	</script>
+</body>
+</html>

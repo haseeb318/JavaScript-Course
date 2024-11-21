@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Prototype</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Employee(firstName,lastName){
+			this.firstName = firstName;
+			this.lastName = lastName;
+		}
+
+		Employee.prototype.company = "LearnVern";
+
+		var emp1 = new Employee("Rahul","Bose");
+		var emp2 = new Employee("Nitin","Kumar");
+
+		document.writeln(emp1.firstName + " " + emp1.lastName + " " + emp1.company + "<br>");
+		document.writeln(emp2.firstName + " " + emp2.lastName + " " + emp2.company + "<br>");
+	</script>
+</body>
+</html>

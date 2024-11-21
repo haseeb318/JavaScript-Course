@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Map forEach()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var m = new Map();
+
+		m.set(1,"HTML");
+		m.set(2,"CSS");
+		m.set(3,"JavaScript");
+
+		document.writeln("Map Values are: <br>");
+
+		m.forEach(function(value){
+			document.writeln(value);
+		})
+
+		// document.writeln("Values : " + m.get(1) + "<br>");
+
+	</script>
+</body>
+</html>

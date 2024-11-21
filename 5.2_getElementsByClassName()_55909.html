@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example document.getElementsByClassName()</title>
+</head>
+<body>
+
+	<div class="abc">
+		This is abc 1st Time.
+	</div>
+
+	<div class="abc">
+		This is abc 2nd Time.
+	</div>
+
+	<div class="abc">
+		This is abc 3rd Time.
+	</div>
+
+	<script type="text/javascript">
+		var x = document.getElementsByClassName('abc');
+		for( value of x){
+				alert(value.innerText);	
+		}
+	</script>
+	
+</body>
+</html>

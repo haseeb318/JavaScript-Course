@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Set object delete()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var s = new Set();
+
+		s.add("HTML");
+		s.add("CSS");
+		s.add("Javascript");
+
+		document.writeln("Before deleting 'CSS' from Set: <br>");
+
+		for(value of s){
+			document.writeln(value + "<br>");
+		}
+
+		s.delete("CSS");
+
+		document.writeln("After deleting 'CSS' from Set: <br> ");
+
+		for(value of s){
+			document.writeln(value + "<br>");
+		}
+
+	</script>
+</body>
+</html>

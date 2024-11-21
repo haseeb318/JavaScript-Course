@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation - 1</title>
+	<style type="text/css">
+		h3{text-align: center;}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function validateForm(){
+			var password = document.myForm.password.value;
+			var confirmPassword = document.myForm.confirmPassword.value;
+
+			if(password == confirmPassword){
+				return true;
+			}else{
+				alert("Password doesn't match");
+				return false;
+			}
+		}
+	</script>
+
+	<h3>Registration Form</h3>
+	<form name="myForm" method="post" onsubmit="return validateForm()">
+		Password : <input type="password" name="password"><br><br>
+		Confirm Password : <input type="password" name="confirmPassword"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

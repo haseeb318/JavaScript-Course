@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Function bind()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var website = {
+			name : "LearnVern",
+			getName: function(){
+				return this.name;
+			}
+		}
+
+		var website2 = {
+			name : "Google",
+		}
+
+		var website3 = {
+			firstName : "Vijay",
+		}
+
+		var website4 = {
+			name : "Hello",
+		}
+
+		var unboundGetName = website.getName;
+		var boundGetName = unboundGetName.bind(website4);
+
+		// document.write(website.getName());
+		document.write(boundGetName());
+	</script>
+
+</body>
+</html>

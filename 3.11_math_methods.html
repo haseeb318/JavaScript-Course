@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Math Methods</title>
+	<style type="text/css">
+		h3{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		document.writeln("<h3>Math Methods</h3>");
+
+		var num1 = -4;
+
+		function randomNumber(){
+			return Math.random()*1000000;
+		}
+
+		document.writeln("<h4>abs() : </h4>");
+		document.writeln("abs() of "+ num1 +" : " + Math.abs(num1));
+		document.writeln("<br>abs() of 4 : " + Math.abs(4));
+		document.writeln("<br>abs() of [] : " + Math.abs([]));
+		document.writeln("<br>abs() of [2,7] : " + Math.abs([2,7]));
+		document.writeln("<br>abs() of null : " + Math.abs(null));
+		document.writeln("<br>abs() of empty : " + Math.abs());
+
+		document.writeln("<h4>ceil() : </h4>");
+		document.writeln("ceil() of 4.2 : " + Math.ceil(4.2));
+		document.writeln("<br>ceil() of 7.6 : " + Math.ceil(7.6));
+		document.writeln("<br>ceil() of -4.2 : " + Math.ceil(-4.2));
+
+		document.writeln("<h4>exp() : </h4>");
+		document.writeln("exp() of 1 : " + Math.exp(1));
+		document.writeln("<br>exp() of 2 : " + Math.exp(2));
+
+		document.writeln("<h4>floor() : </h4>");
+		document.writeln("floor() of 7.2 : " + Math.floor(7.2));
+		document.writeln("<br>floor() of -7.2 : " + Math.floor(-7.2));
+
+		document.writeln("<h4>log() : </h4>");
+		document.writeln("log() of 1 : " + Math.log(1));
+		document.writeln("<br>log() of 0 : " + Math.log(0));
+		document.writeln("<br>log() of 10 : " + Math.log(10));
+
+		document.writeln("<h4>max() : </h4>");
+		document.writeln("Maximum number from 7,6,8,1,9,2 : " + Math.max(7,6,8,1,9,2));
+		document.writeln("<h4>min() : </h4>");
+		document.writeln("Minimum number from 7,6,8,1,9,2 : " + Math.min(7,6,8,1,9,2));
+
+		document.writeln("<h4>pow() : </h4>");
+		document.writeln("2 to the power 3 is : " + Math.pow(2,3));
+		document.writeln("<br>5 to the power 1.2 is : " + Math.pow(5,1.2));
+
+		document.writeln("<h4>random() : </h4>");
+		document.writeln("random number between 0 and 1 : " + Math.random());
+		document.writeln("<br>Create an OTP using Math.random() : " + Math.floor(randomNumber()));
+
+		document.writeln("<h4>round() : </h4>");
+		document.writeln("round() value of 7.2 : " + Math.round(7.2));
+		document.writeln("<br>round() value of 7.7 : " + Math.round(7.7));
+		document.writeln("<br>round() value of -7.2 : " + Math.round(-7.2));
+		document.writeln("<br>round() value of -0.6 : " + Math.round(-0.6));
+
+		document.writeln("<h4>sign() : </h4>");
+		document.writeln("sign() value of 5 : " + Math.sign(5));
+		document.writeln("<br>sign() value of -5 : " + Math.sign(-5));
+		document.writeln("<br>sign() value of 0 : " + Math.sign(0));
+
+		document.writeln("<h4>sqrt() : </h4>");
+		document.writeln("sqrt() value of 4 : " + Math.sqrt(4));
+		document.writeln("<br>sqrt() value of 1.8452 : " + Math.sqrt(1.8452));
+
+		document.writeln("<h4>cbrt() : </h4>");
+		document.writeln("cbrt() value of 8 : " + Math.cbrt(8));
+		document.writeln("<br>cbrt() value of 1.8452 : " + Math.cbrt(1.8452));
+
+		document.writeln("<h4>trunc() : </h4>");
+		document.writeln("trunc() value of 8.56 : " + Math.trunc(8.56));
+		document.writeln("<br>trunc() value of -0.65 : " + Math.trunc(-0.65));
+	</script>
+</body>
+</html>

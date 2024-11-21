@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Set object entries()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var s = new Set();
+
+		s.add("HTML");
+		s.add("CSS");
+		s.add("Javascript");
+
+		var iteration = s.entries();
+
+		for(value of iteration){
+			document.writeln(value + "<br>");
+		}
+
+	</script>
+</body>
+</html>

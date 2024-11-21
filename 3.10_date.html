@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Date()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*Using Date()*/
+		var d1 = new Date();
+
+		document.writeln("Todays Date is : " + d1);
+
+		/*Using Date(year, month, day, hours, minutes, seconds, milliseconds)*/
+		var d2 = new Date(2018,11,1,12,56,5,50);
+
+		document.writeln("<br><br>Date : " + d2);
+
+		/*Using Date(dateString)*/
+		var d3 = new Date("October 12,2014 12:56:03");
+
+		document.writeln("<br><br>Date : " + d3);	
+		
+		/*Using Date(milliseconds)*/
+		var d4 = new Date(-100000);
+
+		document.writeln("<br><br>Date : " + d4);	
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example document.getElementsByTagName()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function countTag(){
+			var x = document.getElementsByTagName("p");
+			var i = document.getElementsByTagName("input");
+			alert("Total number of p tags are : " + x.length + " and Total number of input tags are : " + i.length);
+		}
+	</script>
+	
+		<p> This is a p tag</p>
+		<p> This is a p tag</p>
+		<p> This is a p tag</p>
+		<p> This is a p tag</p>
+		<p> This is a p tag</p>
+
+		<form>
+			<input type="button" value="Count tag Number" onclick="countTag()">
+		</form>
+	
+</body>
+</html>

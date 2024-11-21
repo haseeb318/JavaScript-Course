@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example WeakMap delete()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var wm = new WeakMap();
+
+		var object1 = {};
+		var object2 = {};
+		var object3 = {};
+		var object5 = {};
+
+		wm.set(object1, "HTML");
+		wm.set(object2, "CSS");
+		wm.set(object3, "JavaScript");
+
+		document.writeln("Before deleting object2: " + wm.get(object2) + "<br>");
+
+		wm.delete(object2)
+
+		document.writeln("After deleting object2: " + wm.has(object2) + "<br>");
+	</script>
+</body>
+</html>

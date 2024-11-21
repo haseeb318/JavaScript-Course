@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Set object clear()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var s = new Set();
+
+		s.add("HTML");
+		s.add("CSS");
+		s.add("Javascript");
+
+		document.writeln("Size of the Set before clear() applied: " + s.size + "<br>");
+
+		for(value of s){
+			document.writeln(value + "<br>");
+		}
+
+		s.clear();
+
+		document.writeln("Size of the Set after clear() applied: " + s.size);
+
+	</script>
+</body>
+</html>

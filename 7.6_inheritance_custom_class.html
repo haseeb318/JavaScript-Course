@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exmaple Inheritance Custom class</title>
+</head>
+<body>
+	<script type="text/javascript">
+		class Bike{
+			constructor(){
+				this.companyName = "Honda";
+			}
+		}
+		class Vehicle extends Bike{
+			constructor(name,price){
+				super();
+				this.name = name;
+				this.price = price;
+			}
+		}
+
+		var v1 = new Vehicle("Shine",70000);
+		document.writeln("Bike Name : " + v1.name + "<br>");
+		document.writeln("Bike Price : " + v1.price + "<br>");
+		document.writeln("Company Name : " + v1.companyName + "<br>");
+
+		var v2 = new Vehicle("CBR",120000);
+		document.writeln("Bike Name : " + v2.name + "<br>");
+		document.writeln("Bike Price : " + v2.price + "<br>");
+		document.writeln("Company Name : " + v2.companyName + "<br>");
+	</script>
+</body>
+</html>

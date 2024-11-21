@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example of freeze()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const object1 = {
+			age:23
+		}
+		const object2 = Object.freeze(object1);
+		object2.age = 32;
+
+		console.log(object2.age);
+
+		console.log(Object.isFrozen(object2));
+	</script>
+</body>
+</html>

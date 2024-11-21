@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Callbacks</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function getData(callback){
+
+			var name = prompt("Welcome to LearnVern \n Please enter your Name:");
+
+			var age = prompt("Please enter your Age:");
+
+			callback(name,age);
+		}
+
+		function showData(name,age){
+			alert("Name:"+name+"\nAge:"+age);
+		}
+
+		function showDescription(a,b){
+			document.writeln("Name:"+a+"<br>");
+			document.writeln("Age:"+b+"<br>");
+		}
+
+		// getData(showData);
+		getData(showDescription);
+	</script>
+</body>
+</html>

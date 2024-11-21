@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>History go()</title>
+</head>
+<body>
+	<input type="button" value="Go back to preious 2 pages" onclick="functionGo()">
+
+	<input type="button" value="Go to next 2 page" onclick="functionGo2()">
+
+	<script type="text/javascript">
+		function functionGo(){
+			history.go(-2);
+		}
+
+		function functionGo2(){
+			history.go(2);
+		}
+	</script>
+</body>
+</html>

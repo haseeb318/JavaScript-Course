@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Abstract Class Object</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		function Vehicle(){
+			this.vehicleName = vehicleName;
+			throw new Error("You cannot create instance of an Abstract Class");
+		}
+		Vehicle.prototype.display = function(){
+			return "Vehicle is : " + this.vehicleName;
+		}
+
+		function Bike(vehicleName){
+			this.vehicleName = vehicleName;
+		}
+
+		Bike.prototype = Object.create(Vehicle.prototype);
+
+		var bike = new Bike("Honda");
+
+		document.writeln(bike.display());
+	</script>
+</body>
+</html>

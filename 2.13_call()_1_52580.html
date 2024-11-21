@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example call()-1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Emp(id, name){
+			this.id = id;
+			this.name = name;
+		}
+
+		function PermanentEmp(id,name){
+			Emp.call(this,id,name);
+		}
+
+		function TemporaryEmp(id,name){
+			Emp.call(this,id,name);
+		}		
+
+		
+		var pEmp = new PermanentEmp(1, "Pratik Patel");
+		var tEmp = new TemporaryEmp(2, "Prashant Patel");
+
+		document.writeln(pEmp.id + " " + pEmp.name);
+		document.writeln("<br>");
+		document.writeln(tEmp.id + " " + tEmp.name);
+	</script>
+
+</body>
+</html>

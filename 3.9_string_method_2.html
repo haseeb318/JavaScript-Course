@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Method 2</title>
+</head>
+<body>
+		<script type="text/javascript">
+			str1 = "This is LearnEarn!";
+			str2 = "This is HTML, html is a must to learn Web Designing";
+			str3 = "THIS STRING IS IN CAPS";
+			str4 = "this string is in lowercase";
+			str5 = new String("This string is defined using object");
+			str6 = "       this is a string without space       ";
+
+			/*replace()*/
+			document.writeln("Incorrect String is : " + str1);
+			document.writeln("<br>Corrected String is : " + str1.replace('Earn','Vern'));
+
+			document.writeln("<br>Replace html : " + str2.replace(/HTML/gi,'CSS'));
+
+			/*substr()*/
+			document.writeln("<br><br>New generated string using substr() is: " + str2.substr());
+			document.writeln("<br>New generated string using substr() is: " + str2.substr(14));
+			document.writeln("<br>New generated string using substr() is: " + str2.substr(14,10));
+			document.writeln("<br>New generated string using substr() is: " + str2.substr(-14,10));
+
+			/*substring()*/
+			document.writeln("<br><br>New generated string using substring() is: " + str2.substring());
+			document.writeln("<br>New generated string using substring() is: " + str2.substring(14));
+			document.writeln("<br>New generated string using substring() is: " + str2.substring(14,21));
+
+			/*slice()*/
+			document.writeln("<br><br>Sliced string : " + str2.slice());
+			document.writeln("<br>Sliced string : " + str2.slice(14));
+			document.writeln("<br>Sliced string : " + str2.slice(14,24));
+			document.writeln("<br>Sliced string : " + str2.slice(-14));
+			document.writeln("<br>Sliced string : " + str2.slice(-14,-5));
+
+			/*toLowerCase()*/
+			document.writeln("<br><br>LowerCased string using toLowerCase:" + str3.toLowerCase());
+
+			/*toLocaleLowerCase()*/
+			document.writeln("<br><br>LowerCased string using toLocaleLowerCase:" + str3.toLocaleLowerCase());
+
+			/*toUpperCase()*/
+			document.writeln("<br><br>Uppercased string using toUpperCase(): " + str4.toUpperCase());
+
+			/*toLocaleUpperCase()*/
+			document.writeln("<br><br>Uppercased string using toLocaleUpperCase() : " + str4.toLocaleUpperCase());
+
+			/*toString()*/
+			document.writeln("<br><br> Use toString() on a string : " + str1.toString());
+
+			/*valueOf*/
+			document.writeln("br><br>The value of str5 using valueOf() : " + str5.valueOf());
+
+			/*split()*/
+			document.write("<br><br> str2 after applying split() : " + str2.split(" "));
+
+			/*trim()*/
+			document.write("<br><br> str2 after applying trim() : " + str6.trim());
+		</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Static 5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		class Test{
+			
+			static display(){
+				return "Static Method called";
+			}
+
+			show(){
+				document.writeln(Test.display() + "<br>");
+				return "No-static Method called";
+			}
+		}
+
+		var t = new Test();
+		t.show();
+	</script>
+</body>
+</html>

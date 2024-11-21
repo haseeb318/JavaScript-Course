@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Global Variable using window object</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var temp = "this is a temp variable";
+		
+		function abc(){
+			var y = "this is the 'y' variable";
+			window.x = "this is a variable";
+			document.write(window.x);
+			alert(window.temp);
+		}
+
+
+		abc();
+		def();
+
+		document.write("<br>");
+		document.write(window.y);
+		document.write("<br>");
+		document.write(window.w);
+		document.write("<br>");
+		document.write(window.z);
+
+		document.write("<br>");
+		document.write(window.x);
+
+		function def(){
+			document.write("<br>");
+			document.write(window.x);
+		}
+
+	</script>
+
+</body>
+</html>

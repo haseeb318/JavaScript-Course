@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation - 1</title>
+	<style type="text/css">
+		h3{text-align: center;}
+		#errorTelephone {
+			color: red;
+			font-size: 12px;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function validateForm(){
+			var telephone = document.myForm.telephone.value;
+			if( isNaN(telephone) ){
+				document.getElementById("errorTelephone").innerHTML = "Entered Telephone Number is not correct."
+				return false;
+			}else{
+				return true;
+			}
+		}
+	</script>
+
+	<h3>Registration Form</h3>
+	<form name="myForm" method="post" onsubmit="return validateForm()">
+		Telephone Number : <input type="text" name="telephone"><span id="errorTelephone"></span>
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

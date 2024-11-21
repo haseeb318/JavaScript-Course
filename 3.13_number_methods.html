@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number Methods</title>
+	<style type="text/css">
+		h3{text-align: center;}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var a = 2;
+		var b = 5;
+
+		document.writeln("<h3>Number Methods</h3>")
+		document.writeln("<h4>isFinite : </h4>");
+		document.writeln("is 2 a finite? : " + Number.isFinite(2));
+		document.writeln("<br>is h a finite? : " + Number.isFinite("h"));
+		document.writeln("<br>is -5 a finite? : " + Number.isFinite(-5));
+		document.writeln("<br>is NaN a finite? : " + Number.isFinite(NaN));
+		document.writeln("<br>is (0,10) a finite? : " + Number.isFinite((0,10)));
+		document.writeln("<br>is (10,0) a finite? : " + Number.isFinite((10,0)));
+
+		document.writeln("<h4>isInteger : </h4>");
+		document.writeln("is 2 an Integer? : " + Number.isInteger(2));
+		document.writeln("<br>is 2.56 an Integer? : " + Number.isInteger(2.56));
+		document.writeln("<br>is infinity an Integer? : " + Number.isInteger(Infinity));
+		document.writeln("<br>is -infinity an Integer? : " + Number.isInteger(-Infinity));
+		document.writeln("<br>is NaN an Integer? : " + Number.isInteger(NaN));
+
+		document.writeln("<h4>parseFloat : </h4>");
+		document.writeln("Convert '85' to Float 85 : " + Number.parseFloat("85"));
+		document.writeln("<br>Convert 'Hello' to Float : " + Number.parseFloat("Hello"));
+		document.writeln("<br>Convert '55Hello' to Float : " + Number.parseFloat("55Hello"));
+
+		document.writeln("<h4>parseInt : </h4>");
+		document.writeln("Convert '85' to Int 85 : " + Number.parseInt("85"));
+		document.writeln("<br>Convert 'Hello' to Int : " + Number.parseInt("Hello"));
+		document.writeln("<br>Convert '55Hello' to Int : " + Number.parseInt("Hello"));
+
+		document.writeln("<h4>toExponential : </h4>");
+		document.writeln("Convert '2' to Exponential Number with base 2 : " + a.toExponential(2));
+		document.writeln("<br>Convert '2' to Exponential Number with base 5 : " + b.toExponential(2));
+
+		document.writeln("<h4>toFixed : </h4>");
+		document.writeln("value of PI is : " + Math.PI.toFixed(2));
+
+		document.writeln("<h4>toPrecision : </h4>");
+		document.writeln("value of PI is in string : " + Math.PI.toPrecision(3));
+
+		document.writeln("<h4>toString : </h4>");
+		document.writeln("value of '2' in string : " + a.toString());
+	</script>
+</body>
+</html>

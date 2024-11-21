@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Static 4</title>
+</head>
+<body>
+	<script type="text/javascript">
+		class Test{
+
+			constructor(){
+				document.writeln(Test.display() + "<br>");
+				document.writeln(this.constructor.display());
+			}
+
+
+			static display(){
+				return "A Static method 1 is called";
+			}
+		}
+
+		var t = new Test();
+	</script>
+</body>
+</html>

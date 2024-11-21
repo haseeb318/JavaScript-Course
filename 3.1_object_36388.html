@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Object</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		document.writeln("<h3>Creating Object in Javascript</h3>");
+
+		/*Creating an Object using Object Literals*/
+
+		document.writeln("<h4>Using Object Literals:</h4>");
+		var person =[ {
+			firstName: "Joel",
+			lastName: "Christian",
+			age: 28,
+			eyecolor: "brown"
+		}]
+		document.writeln("Object details of person object : " + person.firstName + " " + person.lastName + " " + person.age + "<br>");
+
+		/* Creating an object using new keyword (Instance of an Object)*/
+		document.writeln("<h4>Using New Keyword:</h4>");
+		var emp = new Object();
+
+		emp.id = 1;
+		emp.name = "Shyam Kumar";
+		emp.salary = 20000;
+
+		document.writeln("Object details of emp object : ")
+		for(value in emp){
+			document.writeln(emp[value] + " ");
+		}
+
+		/* Creating an object using Object Constructor*/
+		document.writeln("<h4>Using Object Constructor:</h4>");
+		function employee(id, name, salary){
+			this.id = id;
+			this.name = name;
+			this.salary = salary;
+		}
+
+		var e = new employee(2, "Pratik Patel", 40000);
+
+		document.writeln("Object details of employee object : ")
+		for(value in e){
+			document.writeln(e[value] + " ");
+		}
+	</script>
+
+</body>
+</html>

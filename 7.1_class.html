@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Class</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		class Employee{
+			constructor(id,name){
+				this.id = id;
+				this.name = name;
+			}
+			details(){
+				document.writeln(this.id + " " + this.name + "<br>");
+			}
+		}
+
+		var object1 = new Employee(1,"ABC");
+		object1.details();
+
+		var object2 = new Employee(2,"DEF");
+		object2.details();
+
+	</script>
+</body>
+</html>

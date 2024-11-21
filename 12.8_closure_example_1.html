@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Closure</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function function1(){
+
+			var a=2;
+
+			function function2(){
+				return a;
+			}
+
+			return function2;
+		}
+
+		var result = function1();
+		document.writeln(result() + "<br>" + result());
+
+		// var result = function2();
+		// document.writeln(result);
+	</script>
+</body>
+</html>

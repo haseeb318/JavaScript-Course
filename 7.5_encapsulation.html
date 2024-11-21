@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Encapsulation 1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		class Student{
+			constructor(){
+				var name;
+				var marks;
+			}
+
+			getName(){
+				return this.name;
+			}
+			setName(name){
+				this.name = name;
+			}
+
+			getMarks(){
+				return this.marks;
+			}
+			setMarks(marks){
+				this.marks = marks;
+			}
+		}
+
+		var stud = new Student();
+		stud.setName("Joel");
+		stud.setMarks(20);
+
+		document.writeln(stud.getName() + " has secured " + stud.getMarks() + " marks");
+	</script>
+</body>
+</html>

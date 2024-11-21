@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example of create()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function fruit(){
+			this.name = "Grapes";
+		}
+		function fun(){
+			fruit.call(this);
+		}
+
+		fun.prototype = Object.create(fruit.prototype);
+		const app = new fun();
+		console.log(app);
+		
+	</script>
+</body>
+</html>

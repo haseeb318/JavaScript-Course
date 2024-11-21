@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Promise.all</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		Promise.all([
+			new Promise( resolve => setTimeout( resolve(1) ,3000) ),
+			new Promise( reject => setTimeout( reject( new Error("Its an Error!!!")) ,2000) ),
+			new Promise( resolve => setTimeout( resolve(3) ,1000) )
+		]).then(alert);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example reduce()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var arr1 = [10,20,30];
+
+		var result = arr1.reduce(function(passedItem,item){
+			return passedItem + item;
+		},0);
+
+		document.writeln("Sum of the array Element is: " + result);
+
+
+	</script>
+</body>
+</html>

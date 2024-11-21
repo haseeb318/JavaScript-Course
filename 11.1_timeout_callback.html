@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Promise</title>
+</head>
+<body>
+	<p>The result will be displayed after 3 Seconds</p>
+	<p id="result"></p>
+
+	<script type="text/javascript">
+
+		setTimeout( function(){
+			myFunction("LearnVern is awesome!!!");
+		} ,3000);
+		
+		function myFunction(value){
+			document.getElementById("result").innerHTML = value;
+		}
+
+	</script>
+</body>
+</html>

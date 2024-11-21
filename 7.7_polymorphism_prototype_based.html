@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exmaple Polymorphism</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function A(){
+
+		}
+		A.prototype.display = function(){
+			return "A class's display Method is called";
+		}
+
+		function B(){
+
+		}
+		
+		B.prototype = Object.create(A.prototype);
+
+		B.prototype.display = function(){
+			return "B class's display Method is called";
+		}
+
+		var a = [new A(),new B()];
+
+		a.forEach(function(message){
+			document.writeln(message.display() + "<br>");
+		})
+	</script>
+</body>
+</html>

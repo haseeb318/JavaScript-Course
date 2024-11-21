@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Promise</title>
+</head>
+<body>
+	<p>The result will be displayed after 3 Seconds</p>
+	<p id="result"></p>
+
+	<script type="text/javascript">
+		
+		let myPromise = new Promise( function( myResolve, myReject){
+			setTimeout( function(){
+				myResolve("LearnVern is Awesome!!!");
+			} ,3000);
+		});
+
+		myPromise.then( function(value){
+			document.getElementById("result").innerHTML = value;
+		}
+		);
+
+	</script>
+</body>
+</html>

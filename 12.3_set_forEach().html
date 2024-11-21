@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Set object forEach()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var s = new Set();
+
+		s.add("HTML");
+		s.add("CSS");
+		s.add("Javascript");
+
+		s.forEach(function(value1,value2,s){
+			document.writeln("key[" + value1 + "] = " + value2 + "<br>");
+		})
+
+	</script>
+</body>
+</html>

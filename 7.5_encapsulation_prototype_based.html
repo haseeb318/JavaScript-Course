@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Encapsulation 1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Student(name,marks){
+			var sName = name;
+			var sMarks = marks;
+
+			Object.defineProperty(this,"name",{
+				get:function(){
+					return sName;
+				},
+				set:function(sName){
+					this.sName = sName;
+				}
+			});
+
+			Object.defineProperty(this,"marks",{
+				get:function(){
+					return sMarks;
+				},
+				set:function(sMarks){
+					this.sMarks = sMarks;
+				}
+			});
+		}
+
+		var stud = new Student("Joel",20);
+		document.writeln(stud.name + " has secured " + stud.marks + " marks");
+		
+	</script>
+</body>
+</html>

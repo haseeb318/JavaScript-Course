@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Promise.any</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		Promise.any([
+			
+			new Promise( (resolve,reject) => setTimeout( reject(new Error("Its an Error!!!")) ,1000) ),
+			new Promise( (resolve,reject) => setTimeout( resolve(1) ,5000) ),
+			new Promise( (resolve,reject) => setTimeout( resolve(2) ,3000) ),
+			
+		]).then(alert).catch( error => {
+			console.log(error.errors[0])
+		});;
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example WeakMap set() and get()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var wm = new WeakMap();
+
+		var object1 = {};
+		var object2 = {};
+		var object3 = {};
+
+		wm.set(object1, "HTML");
+		wm.set(object2, "CSS");
+		wm.set(object3, "JavaScript");
+
+		document.writeln(wm.get(object1) + "<br>");
+		document.writeln(wm.get(object2) + "<br>");
+		document.writeln(wm.get(object3) + "<br>");
+	</script>
+</body>
+</html>

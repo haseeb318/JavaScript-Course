@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation - 1</title>
+	<style type="text/css">
+		h3{text-align: center;}
+		
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function validateForm(){
+			var email = document.myForm.email.value;
+			var atposition = email.indexOf('@');
+			var dotposition = email.indexOf('.');
+
+			if( atposition<1 || dotposition<atposition+2 || dotposition+2 >= email.length ){
+				alert("Email is not correct");
+				return false;
+			}
+		}
+	</script>
+
+	<h3>Registration Form</h3>
+	<form name="myForm" method="post" onsubmit="return validateForm()">
+		email : <input type="text" name="email"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

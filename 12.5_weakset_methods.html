@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example WeakSet add(), has() and delete()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var w = new WeakSet();
+
+		var object1 = {};
+		var object2 = {};
+
+		w.add(object1);
+		w.add(object2);
+
+		document.writeln("Before deleting object2: <br><br>");
+
+		document.writeln("To check if 'object1' exist in WeakSet 'w' : " + w.has(object1) + "<br>"); //explains has()
+		document.writeln("To check if 'object2' exist in WeakSet 'w' : " + w.has(object2) + "<br><br>");
+		// document.writeln("To check if 'object3' exist in WeakSet 'w' : " + w.has(object3) + "<br>");
+
+		document.writeln("After deleting object2: <br><br>");
+
+		w.delete(object2); //explains delete()
+		
+		document.writeln("To check if 'object1' exist in WeakSet 'w' : " + w.has(object1) + "<br>");
+		document.writeln("To check if 'object2' exist in WeakSet 'w' : " + w.has(object2) + "<br>");
+	</script>
+</body>
+</html>

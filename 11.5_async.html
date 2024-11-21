@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Async</title>
+</head>
+<body>
+
+	<p id="result"></p>
+
+	<script type="text/javascript">
+		
+		function display(value){
+			document.getElementById("result").innerHTML = value;
+		}
+
+		async function myFunction(){
+			return "LearnVern is Awesome!!!";
+		}
+
+		/*
+		let promise = new Promise(resolve,reject){
+			resolve(){ "OK"};
+			reject(){ "Error"}
+		}
+
+		promise.then(
+			function(value){display(value)},
+			function(error){display(error)}
+		)
+
+		*/
+
+		myFunction().then(
+			function(value){display(value)},
+			function(error){display(error)}
+		);
+
+	</script>
+</body>
+</html>

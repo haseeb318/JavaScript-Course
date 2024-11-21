@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example of isSeal() and sealed()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const object1 = {
+			name:"abc"
+		}
+		const object2 = Object.seal(object1);
+		object2.name = "def";
+
+		console.log(object2.name);
+
+		delete object2.name;
+
+		console.log(object2.name);
+
+		console.log(Object.isSealed(object2));
+		console.log(Object.isSealed(object1));
+		
+	</script>
+</body>
+</html>

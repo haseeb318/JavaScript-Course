@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Example Async</title>
+</head>
+<body>
+
+  <p id="result"></p>
+
+  <script type="text/javascript">
+    
+    function fun(){
+
+      let promise = Promise.resolve(1);
+      await promise; //check the result in console
+    }
+
+    fun();
+
+  </script>
+</body>
+</html>

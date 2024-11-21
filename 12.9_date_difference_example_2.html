@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Date difference</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var d1 = new Date("10/02/1969");
+		var d2 = new Date();
+
+		var difference =  d2.getTime() - d1.getTime();
+
+		var result = (difference/31536000000).toFixed(0);
+
+		document.writeln("Difference of d2 and d1 is :" + result + " years");
+
+	</script>
+</body>
+</html>

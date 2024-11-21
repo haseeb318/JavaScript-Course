@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Method 5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*sort()*/
+		var num = [8,6,4,3,7,1];
+		var languages = ["HTML","CSS","Java","Bootstrap","Python"];
+		var arr1 = [8,6,4,3,7,1];
+
+		document.writeln("Sorted Number array : " + num.sort() + "<br>");
+		document.writeln("Sorted String array : " + languages.sort() + "<br>");
+
+		document.writeln("the maximum number from array " + arr1);
+		var result = arr1.sort();
+		document.writeln(" is : " + result[result.length - 1]);
+
+		/*splice() : array.splice(start,delete,...element)*/
+		var weekdays = ["Monday","Tuesday","Thursday","Friday"];
+		var addWednesday = weekdays.splice(2,0,"Wednesday");
+		document.writeln("<br><br> Weekdays Array : " + weekdays);
+
+		var weekdays = ["Monday","Tuesday","Saturday","Sunday","Thursday","Friday"];
+		document.writeln("<br> Incorrect Weekdays Array : " + weekdays);
+		var removedContent = weekdays.splice(2,2,"Wednesday");
+		document.writeln("<br> Correct Weekdays Array : " + weekdays);
+		document.writeln("<br> Removed Content from Weekdays array : " + removedContent);
+
+		/*toLocaleString()*/
+		var weekdays = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+
+		var str = weekdays.toLocaleString();
+		document.writeln("<br><br> Weekdays in string format : " + str);
+
+		var arr2 = ['a',1,new Date('8 Jan 1998 17:25:00 UTC')];
+		var str = arr2.toLocaleString('en',{timeZone: "UTC"});
+		console.log("Converted Elements to string is : "  + str);
+
+		/*toString()*/
+		var weekdays = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+
+		document.writeln("<br><br> Weekdays in string format : " + weekdays.toString());
+
+		/*unshift()*/
+		var num1 = [8,5,2];
+		var unshiftArray = num1.unshift(7);
+		document.writeln("<br><br> Adding 7 in the beggining of the array :" + num1);
+
+		/*values()*/
+		var valuesArray = weekdays.values();
+		document.writeln("<br><br> After adding an Iterator to Weekdays Array : <br>");
+		document.writeln(valuesArray.next().value + "<br>");
+		document.writeln(valuesArray.next().value + "<br>");
+		document.writeln(valuesArray.next().value + "<br>");
+		document.writeln(valuesArray.next().value + "<br>");
+		document.writeln(valuesArray.next().value + "<br>");
+		document.writeln(valuesArray.next().value + "<br>");
+		document.writeln(valuesArray.next().value + "<br>");
+		document.writeln(valuesArray.next().value + "<br>");
+		// for(value of valuesArray){
+		// 	document.writeln(value + "<br>")
+		// }
+		// console.log(valuesArray);
+	</script>
+</body>
+</html>

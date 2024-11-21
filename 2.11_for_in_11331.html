@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example of for...in Loop</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		document.writeln("<h3>Example of for...in Loop</h3>");
+
+		var temp = "";
+
+		var person = {
+			firstname: "Joel",
+			lastname: "Christian",
+			age: 28,
+		}
+
+		for( value in person ){
+			temp = temp + person[value] + " ";
+			// document.writeln(person[value]);
+		}
+
+		document.writeln(temp);
+
+	</script>
+
+</body>
+</html>

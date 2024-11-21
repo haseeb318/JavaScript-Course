@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Number</title>
+	<style type="text/css">
+		h3{text-align: center;}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		/*Initialize Numbers in Javascript*/
+		var x = 2;
+		var y = 2.785;
+		var z = 45e2;
+		var a = new Number(16);
+
+		document.writeln("<h3>Javascript Constants</h3>");
+		document.writeln("<h4>MIN_VALUE: " + + Number.MIN_VALUE +"</h4>");
+		document.writeln("<h4>MAX_VALUE: " + + Number.MAX_VALUE +"</h4>");
+		document.writeln("<h4>POSITIVE_INFINITY: " + + Number.POSITIVE_INFINITY +"</h4>");
+		document.writeln("<h4>NEGATIVE_INFINITY: " + + Number.NEGATIVE_INFINITY +"</h4>");
+		document.writeln("<h4>NAN: " + + Number.isNaN +"</h4>");
+
+		document.writeln("to check 'g' is a number: " + Number.isNaN('g') + "<br>");
+		document.writeln("to check '2' is a number: " + Number.isNaN('2')+ "<br>");
+		document.writeln("to check '2' is a number: " + isNaN("hello") + "<br>");
+		document.writeln("to check '2' is a number: " + isNaN("g") + "<br>");
+		document.writeln("to check '2' is a number: " + isNaN(2) + "<br>");
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How to create Array</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*Creating Array using Literals*/
+		document.writeln("<h3>Creating Array using Literals</h3>");
+
+		var employee = ["abc","def","ghi"];
+
+		for(value of employee){
+			document.writeln(value + "<br>");
+		}
+
+		/*Creating Array using new keyword*/
+		document.writeln("<h3>Creating Array using new keyword</h3>");
+
+		var fruits = new Array();
+
+		fruits[0] = "Orange";
+		fruits[1] = "Apple";
+		fruits[2] = "Grapes";
+
+		for(value of fruits){
+			document.writeln(value + "<br>");
+		}
+
+		/*Creating Array using Constructor*/
+		document.writeln("<h3>Creating Array using Constructor</h3>");
+
+		var cars = new Array("XUV","Swift","Verna");
+
+		for(value of cars){
+			document.writeln(value + "<br>");
+		}
+	</script>
+</body>
+</html>

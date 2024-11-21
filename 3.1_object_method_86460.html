@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example object method</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/* Creating an object using Object Constructor*/
+		document.writeln("<h3>Creating Method in object:</h3>");
+		function employee(id, name, salary){
+			this.id = id;
+			this.name = name;
+			this.salary = salary;
+
+			this.updateSalary = updateSalary;
+			function updateSalary(newSalary){
+				this.salary = newSalary;
+			}
+		}
+
+		var e = new employee(2, "Pratik Patel", 40000);
+
+		document.writeln("Salary of " + e.name + " is : " + e.salary);
+
+		e.updateSalary(50000);
+
+		document.writeln("<br>Updated Salary of " + e.name + " is : " + e.salary);		
+	</script>
+
+</body>
+</html>

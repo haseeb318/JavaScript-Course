@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Set object add()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var s = new Set();
+
+		s.add("HTML");
+		s.add("CSS");
+		s.add("Javascript");
+		s.add("CSS"); //Trying to add existing value to Set
+
+		for(value of s){
+			document.writeln(value + "<br>");
+		}
+
+	</script>
+</body>
+</html>
